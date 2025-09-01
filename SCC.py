@@ -76,8 +76,8 @@ class CRCCompressorWithBruteforce:
 
 # ---------------- demo ----------------
 if __name__ == "__main__":
-    data = b"Hello!"
-    comp = CRCCompressorWithBruteforce(segment_size=4, search_range=range(32, 127))
+    data = b"Hello World!"
+    comp = CRCCompressorWithBruteforce(segment_size=3, search_range=range(32, 127))
 
     blob = comp.compress(data)
     print("original bytes:", data)
